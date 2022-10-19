@@ -26,7 +26,7 @@ func productExceptSelf(_ nums: [Int]) -> [Int] {
     
     var right = 1
     
-    for i in stride(from: count - 1, to: -1, by: -1) {
+    for i in stride(from: count - 1, through: 0, by: -1) {
         // since nums[count - 1] has no numbers on the right
         // we will assign a 1 to it
         if i < count - 1 {
